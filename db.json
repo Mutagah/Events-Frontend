@@ -1,0 +1,441 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+
+  "events": [
+    {
+      "id": 1,
+      "banner_img": "https://p4.wallpaperbetter.com/wallpaper/579/1/177/mobile-legends-chou-iori-yagami-hd-wallpaper-preview.jpg",
+      "title": "Chou Kicks",
+      "date": "19-10-2022",
+      "location": "Nairobi"
+    },
+    {
+      "id": 1,
+      "banner_img": "https://p4.wallpaperbetter.com/wallpaper/579/1/177/mobile-legends-chou-iori-yagami-hd-wallpaper-preview.jpg",
+      "title": "Chou Kicks",
+      "date": "19-10-2022",
+      "location": "Nairobi"
+    },
+    {
+      "id": 1,
+      "banner_img": "https://p4.wallpaperbetter.com/wallpaper/579/1/177/mobile-legends-chou-iori-yagami-hd-wallpaper-preview.jpg",
+      "title": "Chou Kicks",
+      "date": "19-10-2022",
+      "location": "Nairobi"
+    },
+    {
+      "id": 1,
+      "banner_img": "https://p4.wallpaperbetter.com/wallpaper/579/1/177/mobile-legends-chou-iori-yagami-hd-wallpaper-preview.jpg",
+      "title": "Chou Kicks",
+      "date": "19-10-2022",
+      "location": "Nairobi"
+    },
+    {
+      "id": 1,
+      "banner_img": "https://p4.wallpaperbetter.com/wallpaper/579/1/177/mobile-legends-chou-iori-yagami-hd-wallpaper-preview.jpg",
+      "title": "Chou Kicks",
+      "date": "19-10-2022",
+      "location": "Nairobi"
+    }
+
+  ],
+  
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+
+  "profile": {
+    "name": "typicode"
+  },
+
+  "eventcategories": [
+    {
+      "id": 1,
+      "category": "Music",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 1,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 2,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 3,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 4,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 5,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 6,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 7,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 8,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 9,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 10,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Business",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 11,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 12,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 13,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 14,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 15,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 16,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Games",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 17,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 18,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 19,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 20,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 21,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 22,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 23,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 24,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 25,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Games",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 26,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },{
+          "id": 27,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 28,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 29,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 30,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },
+        {
+          "id": 31,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        },{
+          "id": 32,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Food & Drink",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 33,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "Performing Arts",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 34,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "Sciences",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 35,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "Sports and Fitness",
+      "image_url":"https://as2.ftcdn.net/v2/jpg/02/25/26/55/1000_F_225265570_DD7IxdhY8BpmjUgI9bita0YfcsjcwIV0.jpg",
+      "events": [
+        {
+          "id": 36,
+          "name": "Afrika Concert",
+          "location": "Nairobi",
+          "early_booking": 1000,
+          "regular": 600,
+          "vip": 1200,
+          "number_of_tickets": 500
+        }
+      ]
+    }
+  ]
+}
