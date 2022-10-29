@@ -125,7 +125,7 @@ const SpecificEvent = () => {
                     onCancel={handleCancel}
                     footer="Bomboclat Events"
                   >
-                    <BuyTicketForm loading={confirmLoading} onClick={handleOk} event={event}/>
+                    <BuyTicketForm loading={confirmLoading} onClick={handleOk} id={id} event={event}/>
                   </Modal>
                 </div>
               </Row>

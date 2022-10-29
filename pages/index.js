@@ -21,7 +21,6 @@ export const getStaticProps = async () => {
 };
 
 export default function Home({ categories, events, homebanners }) {
-  console.log(homebanners)
   
   return (
     <div>
