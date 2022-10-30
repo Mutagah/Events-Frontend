@@ -1,9 +1,20 @@
 import { Col, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 
-const about  = () => {
-  const [communityData, setCommunityData] = useState([]);
-  const [aboutUsData, setAboutUsData] = useState([]);
+
+export const getStaticProps = async () => {
+  const res1 = await fetch("http://localhost:3000/communities");
+  const res2 = await fetch("http://localhost:3000/abouts");
+  const communityData = await res1.json()
+  const aboutUsData = await res2.json()
+  return {
+    props: {
+      communityData,
+      aboutUsData
+    },
+  };
+};
+const about  = ({communityData,aboutUsData}) => {
   const [randomIndexCommunity, setRandomIndex] = useState();
   const [randomIndexAbout, setRandomIndexAbout] = useState();
 
@@ -15,17 +26,6 @@ const about  = () => {
     changeAboutImage()
   }, []);
 
-  useEffect(() => {
-    fetch(`http://localhost:3000/communities`)
-    .then(r => r.json())
-    .then(data => setCommunityData(data))
-  }, []);
-
-  useEffect(() => {
-    fetch(`http://localhost:3000/abouts`)
-    .then(r => r.json())
-    .then(data => setAboutUsData(data))
-  }, []);
 
   function changeAboutImage(){
     const randomNumber = Math.floor(Math.random() * aboutUsData.length);
