@@ -32,25 +32,25 @@ function redirect() {
     const menu = (
       <Menu>
         <Menu.Item>
-            <a
+            <Link
               href="/login"
             >
               Login
-            </a>
+            </Link>
         </Menu.Item>
         <Menu.Item>
-          <a
+          <Link
             href="/userprofile"
           >
             View Profile
-          </a>
+          </Link>
         </Menu.Item>
          <Menu.Item>
-          <a
+          <Link
             onClick={handleLogout}
           >
             Logout 
-          </a>
+          </Link>
         </Menu.Item>
 
       </Menu>
@@ -59,13 +59,13 @@ function redirect() {
     return (
     <Menu overflowedIndicator mode={md ? "horizontal" : "inline"}>
        <Menu.Item >
-          <a href="/"><b>Home</b></a>
+          <Link href="/"><b>Home</b></Link>
         </Menu.Item>
         <Menu.Item >
-          <a href="/createvent"><b>Create an Event</b></a>
+          <Link href="/createvent"><b>Create an Event</b></Link>
         </Menu.Item>
         <Menu.Item >
-          <a href="/about"><b>About Us</b></a>
+          <Link href="/about"><b>About Us</b></Link>
         </Menu.Item>
         <Menu.Item>
           <div>
