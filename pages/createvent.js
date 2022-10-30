@@ -4,7 +4,7 @@ import  { useEffect } from 'react';
 import moment from 'moment';
 const { option } = Select;
 
-const event= () => {
+const Createvent= () => {
 
   let router= useRouter()
 
@@ -202,5 +202,5 @@ const event= () => {
 //   )
 // }
   )}
-export default event;
+export default Createvent;
 

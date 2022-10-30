@@ -4,7 +4,7 @@ import { Avatar,Button } from 'antd';
 import {LeftSquareOutlined} from  '@ant-design/icons';
 import UserCard from '../components/UserCard';
 import {useEffect,useState} from 'react'
-function userprofile() {
+function Userprofile() {
 const [userData,setUserData] = useState([])
 
   useEffect(()=>{
@@ -77,4 +77,4 @@ type="primary" icon={<LogoutOutlined />} size="large"/>
   )
 }
 
-export default userprofile
+export default Userprofile
