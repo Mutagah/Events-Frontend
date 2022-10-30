@@ -1,26 +1,52 @@
 import Link from "next/link"
 import {useState} from "react"
-import { Form, Input, Button, Checkbox, Col } from 'antd';
+import { useRouter } from 'next/router'
+import { Form, Input, Button, Checkbox } from 'antd';
 
 
 function Login(){
+  let router= useRouter()
+
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState([])
-  const loginData = { username: username, password: password}
-  function handleSubmit(){
+  const[user, setUser]= useState([])
+  // const loginData = { username: username, password: password}
+
+  // condition base redirecting
+function redirect() {
+  router.push('/')
+}
+
+  function set_session (user){
+    sessionStorage.setItem("user_id", (user.id))
+    setUser(user)
+  }
+
+  function handleSubmit(event){
+    // event.preventDefault();
+    console.log(username,password) 
+
     fetch("http://localhost:3000/login",{
       method: "POST",
       headers: {
         "Content-Type" : "application/json"
       },
-      body :JSON.stringify(loginData)
+      body :JSON.stringify({
+        username: username,
+        password: password 
+      })
     }).then((res)=> {
       if(res.ok){
-        res.json().then((user)=>console.log(user)).finally(setUsername(""),setPassword(""))
+        res.json().then((data)=>
+        // console.log(data)
+         set_session(data)
+        )
       } else{
-        res.json().then((e)=> setError([e.error])).finally(setUsername(""),setPassword(""))
+        res.json().then((e)=> 
+        console.log([e.error]))
       }
+      // window.reload("/")
     })
 }
     return (
@@ -29,13 +55,9 @@ function Login(){
         <div className="illustration-wrapper">
           <img src="https://mixkit.imgix.net/art/preview/mixkit-left-handed-man-sitting-at-a-table-writing-in-a-notebook-27-original-large.png?q=80&auto=format%2Ccompress&h=700" alt="Login"/>
         </div>
-        
-     
 
-      <Col xs={24} md={12}>
-      <Form 
-          name="login-form"
-        >
+      {/* <Col xs={24} md={12}> */}
+      <Form onFinish={handleSubmit} name="login-form">
           <p className="form-title">LOG IN</p>
           <Form.Item
             name="username"
@@ -44,7 +66,7 @@ function Login(){
             <Input
               placeholder="Input username"
               name="username"
-              value={loginData.username}
+              value={username}
               onChange={(event)=> setUsername(event.target.value)}
             />
           </Form.Item>
@@ -57,7 +79,7 @@ function Login(){
             <Input.Password 
               placeholder="Password"
               name="password"
-              value={loginData.password}
+              value={password}
               onChange={(event)=> setPassword(event.target.value)}
             />
           </Form.Item>
@@ -69,13 +91,15 @@ function Login(){
                             )}
 
           <Form.Item>
-            <Button className="login-form-button" onClick={handleSubmit}>
+            <Button 
+            onClick={redirect}
+            htmlType="submit" className="login-form-button" >
               LOGIN
             </Button>
           </Form.Item>
           <p>If you dont have an account?<Link href="/signup"> Click me!</Link></p>
         </Form>
-      </Col>
+      {/* </Col> */}
       </div>
       </div>
     )

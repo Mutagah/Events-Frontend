@@ -1,31 +1,80 @@
-// import React from 'react'
+import { Col, Row ,Card} from 'antd';
+import { AntDesignOutlined,EditOutlined,LogoutOutlined } from '@ant-design/icons';
+import { Avatar,Button } from 'antd';
+import {LeftSquareOutlined} from  '@ant-design/icons';
+import UserCard from '../components/UserCard';
+import {useEffect,useState} from 'react'
+function userprofile() {
+const [userData,setUserData] = useState([])
 
-// function userprofile() {
-//   return (
-//     <div>userprofile
-//     <Form.Item label="user_id">
-//         <Input />
-//       </Form.Item>
-//       <Form.Item label="full_name">
-//         <Input />
-//       </Form.Item>
-//       <Form.Item label="avatar_img">
-//         <Input />
-//       </Form.Item>
-//       <Form.Item label="phone_number">
-//         <Input />
-//       </Form.Item>
-//       <Form.Item label="bio">
-//         <Input />
-//       </Form.Item>
-//       <Form.Item label="gender">
-//         <Input />
-//       </Form.Item>
+  useEffect(()=>{
+    fetch(`http://localhost:3000/users/2`)
+    .then(response => response.json())
+    .then((data)=> {
+  setUserData(data)
+     
+    })
+    },[])
+  
 
-      
-//       </div>
+
+  return (
+  <div
+  style={{width: "100%" ,
+  textAlign: "center",
+  }}
+  >
+
+
+
+  
+<Row 
+style={{width: "100%" ,
+textAlign: "center",
+justifyContent:"center"
+}}> 
+ <Card
+    hoverable
+    style={{
+      background: "grey",
+      borderRadius: "50%",
+      width: "100px",
+      height: "100px",
+      }}>
+        avatar image
+     </Card>
+     
+
+</Row>
+<br></br>
+<Row
+style={{width: "100%" ,
+textAlign: "center",
+justifyContent:"center"
+}}> 
+{userData.username}
+
+</Row>
+
+<Row>
+  <UserCard userData={userData}/>
+</Row>
+<br></br>
+<Row>
+<Button 
+
+style={{width: "100%" ,
+textAlign: "center",
+justifyContent:"center"
+}}
+
+type="primary" icon={<LogoutOutlined />} size="large"/>
+
+</Row>
+</div>
     
-//   )
-// }
 
-// export default userprofile
+  )
+}
+
+export default userprofile

@@ -21,7 +21,7 @@ return (
                        borderRadius: 10,
                        boxShadow: "5px 5px #d1410a"
                        }}>
-                      <p style={{marginTop: 10}}><b>{event.category}</b></p>
+                      <p style={{marginTop: 10}}><b>{event.title}</b></p>
                     </div>
                   </Link>
                   &nbsp;
