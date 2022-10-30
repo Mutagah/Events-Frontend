@@ -3,7 +3,7 @@ import { useEffect,useState } from "react"
 import {Row,Col, Card} from "antd"
 import Link from "next/link";
 
-function event(){
+function Event(){
   const [categoryData, setCategoryData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
@@ -109,4 +109,4 @@ function event(){
     </Row>
   )
 }
-export default event
+export default Event
