@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
     },
   };
 };
-const about  = ({communityData,aboutUsData}) => {
+const About  = ({communityData,aboutUsData}) => {
   const [randomIndexCommunity, setRandomIndex] = useState();
   const [randomIndexAbout, setRandomIndexAbout] = useState();
 
@@ -138,4 +138,4 @@ const about  = ({communityData,aboutUsData}) => {
   );
 };
 
-export default about;
+export default About;
