@@ -87,6 +87,7 @@ const SpecificEvent = () => {
 
     <Row justify="center" align="middle">
       <Col span={24}>
+        <picture>
         <img 
         src={eventOne.banner_img}
         alt="Tech"
@@ -96,6 +97,7 @@ const SpecificEvent = () => {
           display: "block"
         }}
         />
+        </picture>
       </Col>
 
       <br />
@@ -212,6 +214,7 @@ const SpecificEvent = () => {
                 <div style={{display: "inline-flex", fontFamily: "nunito", width: "100%", justifyContent: "center", textAlign: "center"}}>
                   <Row justify="center" align="middle">
                     <Col >
+                    <picture>
                       <img 
                       src={eventOne.image_url1}
                       alt="Tech"
@@ -222,6 +225,7 @@ const SpecificEvent = () => {
                         paddingTop: 30
                       }}
                       />
+                      </picture>
                     </Col>
                   </Row>
                 </div>
@@ -231,6 +235,7 @@ const SpecificEvent = () => {
                 <div style={{display: "inline-flex", fontFamily: "nunito", width: "100%", justifyContent: "center", textAlign: "center"}}>
                   <Row justify="center" align="middle">
                     <Col >
+                    <picture>
                       <img 
                       src={eventOne.image_url2}
                       alt="Tech"
@@ -241,6 +246,7 @@ const SpecificEvent = () => {
                         paddingTop: 30
                       }}
                       />
+                      </picture>
                     </Col>
                   </Row>
                 </div>

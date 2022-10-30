@@ -43,11 +43,13 @@ const HomePageEvents = ({ events }) => {
                         cursor: "pointer",
                       }}
                       cover={
+                        <picture>
                         <img
                           alt={event.title}
                           src={event.image_url1}
                           height="200px"
                         />
+                        </picture>
                       }
                       hoverable
                     >
