@@ -43,6 +43,7 @@ export default function Home({ categories, events, homebanners }) {
               {(Array.isArray(homebanners) ? homebanners : []).map((banner) => {
                 return(
                   <>
+                  <picture>
                     <img 
                       src={banner.image_url}
                       alt={banner.title}
@@ -51,6 +52,7 @@ export default function Home({ categories, events, homebanners }) {
                         height: "405px",
                       }}
                     />
+                    </picture>
                   </>
                 )
               })}

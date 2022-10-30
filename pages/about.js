@@ -57,6 +57,7 @@ const About  = ({communityData,aboutUsData}) => {
         <Row justify='center' align='middle'>
           <Col span={12}>
             <Row justify="center" align="middle">
+              <picture>
               <img 
                 src={aboutUsData[randomIndexAbout]?.about_img}
                 alt={aboutUsData[randomIndexAbout]?.id}
@@ -68,6 +69,7 @@ const About  = ({communityData,aboutUsData}) => {
                   borderRadius: 20
                 }}
               />
+              </picture>
             </Row>
           </Col>
           <Col span={12}>
@@ -104,6 +106,7 @@ const About  = ({communityData,aboutUsData}) => {
         <Row justify='center' align='middle'>
           <Col span={12}>
             <Row justify="center" align="middle">
+              <picture>
               <img 
               src={communityData[randomIndexCommunity]?.community_img}
               alt={communityData[randomIndexCommunity]?.id}
@@ -115,6 +118,7 @@ const About  = ({communityData,aboutUsData}) => {
                 borderRadius: 20
               }}
               />
+              </picture>
             </Row>
           </Col>
           <Col span={12}>

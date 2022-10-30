@@ -40,6 +40,7 @@ function Event(){
           </Col>
           <Col span={12}>
             <div>
+              <picture>
             <img 
               src={categoryData?.banner_img}
               alt="Tech"
@@ -49,6 +50,7 @@ function Event(){
                 display: "block"
               }}
               />
+              </picture>
             </div>
           </Col>
         </Row>
@@ -75,7 +77,7 @@ function Event(){
                           padding: 2, 
                           cursor: "pointer",
                           }}
-                          cover={<img alt={event.title} src={event.image_url1} height="200px"/>}
+                          cover={<picture><img alt={event.title} src={event.image_url1} height="200px"/></picture>}
                           hoverable
                         >
                           <div>
@@ -102,7 +104,6 @@ function Event(){
             </Col>
           )
           }
-          
         </div>
         </Row>
       </Col>
